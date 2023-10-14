@@ -4,7 +4,7 @@
 
 Welcome to the Sorting Algorithm Visualizer project! This web-based tool allows you to interactively explore various sorting algorithms and gain a better understanding of how they work. 
 
-Access the Sorting Algorithm Visualizer here: [Sorting Algorithm Visualizer]([https://your-website-url.com](https://akshikamde21.github.io/sorting-algorithm-visualizer/))
+Access the Sorting Algorithm Visualizer here: [Sorting Algorithm Visualizer](https://akshikamde21.github.io/sorting-algorithm-visualizer/)
 
 ## Technology Used
 
