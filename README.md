@@ -13,21 +13,32 @@ Access the Sorting Algorithm Visualizer here: [Sorting Algorithm Visualizer](htt
 
 ## Features
 
-- **Interactive Visualization:** See how sorting algorithms work in real-time with step-by-step visualizations.
+- **Interactive Visualization** 
 
-- **Algorithm Selection:** Choose from a variety of sorting algorithms, such as Bubble Sort, Quick Sort, Merge Sort, and more.
+- **Algorithm Selection:**
+  - Bubble Sort
+  - Selection Sort
+  - Insertion Sort
+  - Merge Sort
+  - Quick Sort
 
-- **Customization:** Adjust parameters like array size and sorting speed to explore different scenarios.
+- **Customization:**
+  - Adjust parameters like array size and sorting speed to explore different scenarios.
 
-- **Visual Feedback:** Highlight the elements being compared and swapped during each step.
+- **Visual Feedback:**
+  - Highlight the elements being compared and swapped during each step.
 
 
 ## Additional features to be added in future
 
-- **Algorithm Descriptions:** Access detailed descriptions and explanations for each sorting algorithm.
+- **Algorithm Descriptions:**
+  - Access detailed descriptions and explanations for each sorting algorithm.
 
-- **Color Themes:** Customize the visualizer's appearance with a selection of color themes. (dark theme)
+- **Color Themes:**
+  - Customize the visualizer's appearance with a selection of color themes. (dark theme)
   
-- **Performance Metrics:** View key performance metrics like time complexity and space complexity for each algorithm.
+- **Performance Metrics:**
+  - View key performance metrics like time complexity and space complexity for each algorithm.
 
-- **Export and Share:** Export your visualizations as images or gifs to share with others.
+- **Export and Share:**
+  - Export your visualizations as images or gifs to share with others.
