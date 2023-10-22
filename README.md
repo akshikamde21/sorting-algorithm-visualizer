@@ -1,6 +1,6 @@
 # SortViz: Sorting Algorithm Visualization Tool
 
-![SortViz](https://your-website-url.com/assets/visualizer-screenshot.png)
+![SortViz](https://github.com/akshikamde21/sorting-algorithm-visualizer/blob/1450899a84d219b68f424768a1abb9bef719d905/assets/demo2.png)
 
 Welcome to SortViz, a powerful web-based tool that allows you to interactively explore various sorting algorithms and gain a deeper understanding of how they work.
 
