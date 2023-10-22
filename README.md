@@ -26,18 +26,11 @@ Clearly observe the elements being compared and swapped during each step of the 
 
 ## Upcoming Features
 
-- **Algorithm Descriptions:**
-Access detailed explanations and descriptions for each sorting algorithm, including time complexity and use cases.
+- **Algorithm Descriptions and Performance Metrics:**
+Access detailed explanations and descriptions for each sorting algorithm, including time complexity and space complexity.
 
 - **Color Themes:**
 Customize the visualizer's appearance with a selection of color themes, including a dark theme for improved visibility.
-
-- **Performance Metrics:**
-Gain insights into key performance metrics, such as time complexity and space complexity, for each algorithm.
-
-- **Export and Share:**
-Export your visualizations as images or GIFs to share your discoveries with friends and colleagues.
-
 
 ---
 
