@@ -38,10 +38,7 @@ Gain insights into key performance metrics, such as time complexity and space co
 - **Export and Share:**
 Export your visualizations as images or GIFs to share your discoveries with friends and colleagues.
 
-## License
-
-SortViz is licensed under the [MIT License](LICENSE), which permits you to use, modify, and contribute to this project.
 
 ---
 
-Thank you for exploring SortViz! We hope you find it an invaluable tool for learning and experimenting with sorting algorithms.
+Thank you for exploring SortViz! 
