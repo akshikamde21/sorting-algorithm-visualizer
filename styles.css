@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Consolas', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -326,7 +326,11 @@ hr {
   }
 
   h1 {
-    color: var(--secondary-color);
+    color: var(--background-light);
+  }
+
+  label{
+    color: var(--text-dark);
   }
 
   #randomize-btn,
