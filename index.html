@@ -1,45 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <title>Sorting Algorithm Visualizer</title>
-</head>
-<body>   
-    <div class="container">
-        <h1>Sorting Algorithm Visualizer</h1>
-        <div id="array-generator"></div>
-        <div class="controller">
-            <div class="slider-container">
-              <label>Size: <span id="size-demo">15</span></label>
-              <input type="range" id="size-slider" class="slider" autocomplete="off" min="4" max="40" value="15">
-            </div>
-            <div class="slider-container">
-              <label>Speed: <span id="speed-demo">5</span></label>
-              <input type="range" id="speed-slider" class="slider" autocomplete="off" min="1" max="10" value="5">
-            </div>
-            <button id="randomize-btn">Randomize</button>  
-        </div>
-        <div class="algo-container">
-            <button class="algo-btn" id="bubble-sort-btn" data-sort-type="bubble">Bubble Sort</button>            
-            <button class="algo-btn" id="selection-sort-btn" data-sort-type="selection">Selection Sort</button>
-            <button class="algo-btn" id="insertion-sort-btn" data-sort-type="insertion">Insertion Sort</button>
-            <button class="algo-btn" id="merge-sort-btn" data-sort-type="merge">Merge Sort</button>
-            <button class="algo-btn" id="quick-sort-btn" data-sort-type="quick">Quick Sort</button>
-            <button id = "sort-btn">Sort</button>
-        </div>
-        <div id="bar-container"></div>
-        <div id="completion-message"></div>
-        
-    </div>
-    <script src="index.js"></script>
-    <script src="algorithms/insertionSort.js"></script>
-    <script src="algorithms/bubbleSort.js"></script>
-    <script src="algorithms/selectionSort.js"></script>
-    <script src="algorithms/mergeSort.js"></script>
-    <script src="algorithms/quickSort.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+		<title>Sorting Algorithm Visualizer</title>
+	</head>
+	<body>
+		<!-- <nav>
+			<div class="theme-switch-wrapper">
+				<label class="theme-switch" for="checkbox">
+					<input type="checkbox" id="checkbox" />
+					<div class="theme-slider round"></div>
+				</label>
+				<em>Enable Dark Mode!</em>
+			</div>
+		</nav> -->
+		<div class="container">
+			<h1>Sorting Algorithm Visualizer</h1>
+			<div id="array-generator"></div>
+			<div class="controller">
+				<div class="slider-container">
+					<label>Size:<span id="size-demo">15</span></label> &nbsp;
+					<input
+						type="range"
+						id="size-slider"
+						class="slider"
+						autocomplete="off"
+						min="4"
+						max="40"
+						value="15"
+					/>
+				</div>
+				<div class="slider-container">
+					<label>Speed:<span id="speed-demo">5</span></label> &nbsp;
+					<input
+						type="range"
+						id="speed-slider"
+						class="slider"
+						autocomplete="off"
+						min="1"
+						max="10"
+						value="5"
+					/>
+				</div>
+				<button id="randomize-btn" class="slider-container">Randomize</button>
+			</div>
+			<hr />
+			<div class="algo-container">
+				<button class="algo-btn" id="bubble-sort-btn" data-sort-type="bubble">Bubble Sort</button>
+				<button class="algo-btn" id="selection-sort-btn" data-sort-type="selection">Selection Sort</button>
+				<button class="algo-btn" id="insertion-sort-btn" data-sort-type="insertion">Insertion Sort</button>
+				<button class="algo-btn" id="merge-sort-btn" data-sort-type="merge">Merge Sort</button>
+				<button class="algo-btn" id="quick-sort-btn" data-sort-type="quick">Quick Sort</button>
+                <button class="algo-btn" id="radix-sort-btn" data-sort-type="radix">Radix Sort</button>
+                <button class="algo-btn" id="shell-sort-btn" data-sort-type="shell">Shell Sort</button>
+				<button id="sort-btn">Sort</button>
+			</div>
+			<div id="completion-message"></div>
+			<div id="bar-container"></div>
+		</div>
+		<script src="index.js"></script>
+		<script src="algorithms/insertionSort.js"></script>
+		<script src="algorithms/bubbleSort.js"></script>
+		<script src="algorithms/selectionSort.js"></script>
+		<script src="algorithms/mergeSort.js"></script>
+		<script src="algorithms/quickSort.js"></script>
+		<script src="algorithms/radixSort.js"></script>
+		<script src="algorithms/shellSort.js"></script>
+	</body>
 </html>
