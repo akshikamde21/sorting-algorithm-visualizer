@@ -1,4 +1,10 @@
 # SortViz: Sorting Algorithm Visualization Tool
+<p align="center">
+  <img src="https://img.shields.io/github/last-commit/akshikamde21/sorting-algorithm-visualizer" alt="GitHub last commit">
+  <img src="https://img.shields.io/github/contributors/akshikamde21/sorting-algorithm-visualizer" alt="GitHub contributors">
+  <img src="https://img.shields.io/github/stars/akshikamde21/sorting-algorithm-visualizer?style=social" alt="GitHub stars">
+</p>
+
 
 ![SortViz](https://github.com/akshikamde21/sorting-algorithm-visualizer/blob/1450899a84d219b68f424768a1abb9bef719d905/assets/demo2.png)
 
