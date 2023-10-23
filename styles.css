@@ -330,9 +330,9 @@ hr {
     color: var(--text-dark);
   }
 
-  /* body.dark-mode h1 {
-    color: var(--secondary-color);
-  } */
+   body.dark-mode h1, body.dark-mode label {
+    color: var(--text-dark);
+  } 
 
   body.dark-mode #randomize-btn {
     background: var(--secondary-color);
