@@ -18,6 +18,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Consolas', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
 }
 
 body {
@@ -61,7 +62,7 @@ h1 {
 }
 
 /* Dark Theme Enabler */
-/* nav {
+nav {
   width: 80%;
   margin: auto;
   padding: 20px;
@@ -116,7 +117,7 @@ h1 {
 }
 
 input:checked+.theme-slider {
-  background-color: #66bb6a;
+  background-color: var(--primary-color);
 }
 
 input:checked+.theme-slider:before {
@@ -137,7 +138,7 @@ input:checked+.theme-slider:before {
 
 .theme-slider.round:before {
   border-radius: 50%;
-} */
+}
 
 
 
@@ -208,8 +209,8 @@ label {
 button {
   border: none;
   padding: 10px 20px;
-  color: var(--text-light);
-  background-color: var(--background-light);
+  color: var(--text-dark);
+  background-color: var(--background-dark);
   width: 150px;
   margin-bottom: 5px;
   margin-left: 5px;
@@ -221,7 +222,7 @@ button {
 
 .algo-btn.active,
 .algo-btn:hover {
-  background: #3c3c3c;
+  background: orange;
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 4px 4px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
@@ -229,7 +230,7 @@ button {
 }
 
 #sort-btn {
-  background: rgb(90, 236, 255);
+  background: rgb(59, 208, 227);
   width: 80px;
   transition: background 0.3s ease, box-shadow 0.3s ease;
   -webkit-transition: background 0.3s ease, box-shadow 0.3s ease;
@@ -289,6 +290,10 @@ hr {
 /* Media query for smaller screens */
 @media screen and (max-width: 767px) {
 
+  nav {
+    justify-content: center;
+  }
+
   .controller {
     flex-direction: column;
   }
@@ -319,26 +324,35 @@ hr {
 
 
 /* Dark mode styles using media query */
-@media (prefers-color-scheme: dark) {
-  body {
+@media (prefers-color-scheme : dark) {
+  body.dark-mode {
     background-color: var(--background-dark);
     color: var(--text-dark);
   }
 
-  h1 {
+  /* body.dark-mode h1 {
     color: var(--secondary-color);
-  }
+  } */
 
-  #randomize-btn,
-  #sort-btn {
+  body.dark-mode #randomize-btn {
     background: var(--secondary-color);
     color: white;
   }
 
-  .algo-btn.active,
-  .algo-btn:hover {
+  body.dark-mode #sort-btn {
+    background-color: rgb(59, 208, 227);
+    color: white;
+  }
+
+  body.dark-mode .algo-btn {
+    background: var(--background-light);
+    color: var(--text-light);
+  }
+
+  body.dark-mode .algo-btn.active,
+  body.dark-mode .algo-btn:hover {
     background: orange;
     color: white;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, .2), inset 4px 4px 4px rgba(0, 0, 0, .2);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2), inset 4px 4px 4px rgba(0, 0, 0, 0.2);
   }
 }

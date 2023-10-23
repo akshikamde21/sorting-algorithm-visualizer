@@ -150,6 +150,10 @@ document.getElementById("shell-sort-btn").addEventListener("click", function () 
 	setSelectedSortType("shell");
 });
 
+document.getElementById("radix-sort-btn").addEventListener("click", function () {
+	setSelectedSortType("radix");
+});
+
 let selectedSortType = null;
 
 function setSelectedSortType(sortType) {
@@ -184,6 +188,8 @@ function sortTheArray() {
 		sortFunction = startQuickSort;
 	} else if (selectedSortType === "shell") {
 		sortFunction = shellSort;
+	} else if (selectedSortType === "radix") {
+		sortFunction = radixSort;
 	}
 
 	const sortBtn = document.getElementById("sort-btn");
@@ -217,27 +223,31 @@ sortBtn.addEventListener("click", function () {
 
 // // Theme Switcher For Dark Mode
 
-// const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-// const currentTheme = localStorage.getItem("theme");
+const toggleSwitch = document.getElementById("checkbox");
+const currentTheme = localStorage.getItem("theme");
 
-// function setTheme(theme) {
-// 	document.documentElement.setAttribute("color-scheme", theme);
-// 	localStorage.setItem("theme", theme);
-// }
+function setTheme(theme) {
+	if (theme === "dark") {
+		document.body.classList.add("dark-mode");
+	} else {
+		document.body.classList.remove("dark-mode");
+	}
+	localStorage.setItem("theme", theme);
+}
 
-// if (currentTheme) {
-// 	setTheme(currentTheme);
-// 	if (currentTheme === "dark") {
-// 		toggleSwitch.checked = true;
-// 	}
-// }
+if (currentTheme) {
+	setTheme(currentTheme);
+	if (currentTheme === "dark") {
+		toggleSwitch.checked = true;
+	}
+}
 
-// function switchTheme(e) {
-// 	if (e.target.checked) {
-// 		setTheme("dark");
-// 	} else {
-// 		setTheme("light");
-// 	}
-// }
+function switchTheme() {
+	if (toggleSwitch.checked) {
+		setTheme("dark");
+	} else {
+		setTheme("light");
+	}
+}
 
-// toggleSwitch.addEventListener("change", switchTheme);
+toggleSwitch.addEventListener("change", switchTheme);
